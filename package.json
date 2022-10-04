@@ -20,6 +20,8 @@
   "homepage": "https://github.com/mighttymike/Iot-Project#readme",
   "dependencies": {
     "ds18b20-raspi": "^0.3.6",
+    "express": "^4.18.1",
+    "mysql": "^2.18.1",
     "nodemon": "^2.0.20"
   }
 }
