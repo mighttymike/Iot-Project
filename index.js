@@ -9,7 +9,7 @@ const port = 3000;
 //setup database connection
 const mysql = require('mysql');
 var con = mysql.createConnection({
-    host: "172.20.10.3:3306",
+    host: "172.20.10.3",
     user: "root",
     password: "",
     database: "iot-project",
