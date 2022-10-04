@@ -1,5 +1,4 @@
 const sensor = require('ds18b20-raspi');
-const tempC = sensor.readSimpleC();
 // console.log(`${tempC} degC`);
 
 const express = require('express');
@@ -22,6 +21,8 @@ var con = mysql.createConnection({
 
 
 app.post('/currentTemp', (req, res)=>{
+    const tempC = sensor.readSimpleC();
+
         var sql = `INSERT INTO temperature (temp) VALUES (${tempC})`;
         con.query(sql, function (err, result) {
           if (err) throw err;
