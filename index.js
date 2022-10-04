@@ -29,7 +29,7 @@ app.post('/currentTemp', (req, res)=>{
           
         
       });
-    res.status(200).send({"tempNow": 26});
+    res.status(200).send({"tempNow": tempC});
     res.end();
 });
 
